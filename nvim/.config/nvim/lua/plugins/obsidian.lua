@@ -19,16 +19,12 @@ return {
       -- see below for full list of optional dependencies 👇
     },
     opts = {
-      ui = {
-        enable = false,
-      },
       workspaces = {
         {
           name = 'SecondBrain',
           path = '/home/brandon/SecondBrain/',
         },
       },
-
       notes_subdir = '05 - Fleeting',
       new_notes_location = 'notes_subdir',
 
@@ -44,14 +40,5 @@ return {
         return tostring(os.time()) .. '-' .. suffix
       end,
     },
-  },
-  {
-    'MeanderingProgrammer/render-markdown.nvim',
-    dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
-    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
-    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
-    ---@module 'render-markdown'
-    ---@type render.md.UserConfig
-    opts = {},
   },
 }
