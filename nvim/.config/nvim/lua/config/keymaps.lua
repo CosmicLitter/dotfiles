@@ -34,6 +34,7 @@ end, { desc = 'Open [T]erminal' })
 keymap.set('n', '<leader>tw', ':se wrap!<CR>', { desc = 'Toggle wrap', silent = true })
 
 -- Window splitting and navigation
+keymap.set('n', '<leader>xn', '<CMD>vnew<CR>', { desc = 'Open new buffer in vertical split' })
 keymap.set('n', '<leader>xv', '<C-w>v', { desc = 'Split window vertically' })
 keymap.set('n', '<leader>xh', '<C-w>s', { desc = 'Split window horizontally' })
 keymap.set('n', '<leader>xe', '<C-w>=', { desc = 'Make split windows equal width' })

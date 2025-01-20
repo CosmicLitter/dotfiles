@@ -29,6 +29,7 @@ opt.virtualedit = 'block' -- allow visual block to select empty spaces
 opt.shiftround = true
 opt.sidescrolloff = 10 -- columns of context
 opt.signcolumn = 'yes' -- always show sign column
+opt.textwidth = 80
 
 -- Tabs
 --
